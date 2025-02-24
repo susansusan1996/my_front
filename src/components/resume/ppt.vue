@@ -83,17 +83,19 @@ export default {
 
 <template>
   <div class="container">
-    <transition name="page" mode="out-in">
-      <div :key="currentPage" class="page">
+    <transition name="fade">
+      <div v-if="pages[currentPage]" class="page">
         <h2>{{ pages[currentPage].title }}</h2>
         <img
           :src="pages[currentPage].image"
           alt="Page Image"
           class="page-image"
+          loading="lazy"
         />
         <p v-html="pages[currentPage].content"></p>
       </div>
     </transition>
+
     <div class="buttons">
       <button @click="prevPage" :disabled="currentPage === 0">上一頁</button>
       <button @click="nextPage" :disabled="currentPage === pages.length - 1">
