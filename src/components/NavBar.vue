@@ -21,10 +21,10 @@
           <BDropdownItem to="/my_front/queue">queue</BDropdownItem>
         </BNavItemDropdown>
       </BNavbarNav>
-      <BNavForm class="d-flex">
-        <BFormInput class="me-2" placeholder="Search" />
-        <BButton type="submit" variant="outline-success">Search</BButton>
-      </BNavForm>
+      <!--      <BNavForm class="d-flex">-->
+      <!--        <BFormInput class="me-2" placeholder="Search" />-->
+      <!--        <BButton type="submit" variant="outline-success">Search</BButton>-->
+      <!--      </BNavForm>-->
     </BCollapse>
   </BNavbar>
 </template>
