@@ -128,9 +128,9 @@ export default {
 }
 
 .page-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: 600px; 
+  height: 500px; 
+  object-fit: cover; 
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -151,7 +151,7 @@ button {
   color: white;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 button:disabled {
