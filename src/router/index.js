@@ -10,14 +10,14 @@ import ppt from '../components/resume/ppt.vue';
 
 
 const routes = [
-    { path: '/', name: 'Home', component: () => import('../components/data_structure/Home.vue') },
-    { path: '/resume', name: 'ppt', component: ppt },
-    { path: '/stack', name: 'Stack', component: Stack },
-    { path: '/queue', name: 'Queue', component: Queue },
-    { path: '/bst', name: 'BST', component: BST },
-    { path: '/snake', name: 'Snake', component: Snake },
-    { path: '/mario', name: 'Mario', component: Mario },
-    { path: '/shoot', name: 'Shoot', component: Shoot }
+    { path: '/my_front/', name: 'Home', component: () => import('../components/data_structure/Home.vue') },
+    { path: '/my_front/resume', name: 'ppt', component: ppt },
+    { path: '/my_front/stack', name: 'Stack', component: Stack },
+    { path: '/my_front/queue', name: 'Queue', component: Queue },
+    { path: '/my_front/bst', name: 'BST', component: BST },
+    { path: '/my_front/snake', name: 'Snake', component: Snake },
+    { path: '/my_front/mario', name: 'Mario', component: Mario },
+    { path: '/my_front/shoot', name: 'Shoot', component: Shoot }
 ];
 
 const router = createRouter({
