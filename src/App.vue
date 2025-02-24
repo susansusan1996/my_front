@@ -5,7 +5,7 @@
     <router-view></router-view>
     <!--      </keep-alive>-->
   </div>
-  <app-footer></app-footer>
+  <!--  <app-footer></app-footer>-->
 </template>
 
 <script setup>

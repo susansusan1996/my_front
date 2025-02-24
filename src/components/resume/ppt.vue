@@ -113,55 +113,93 @@ export default {
 
 <style scoped>
 .container {
-  width: 70%; /* 將寬度調整為 70%，使卡片更寬 */
-  margin: auto;
-  text-align: center;
+  max-width: 1000px;
+  margin: 40px auto;
   padding: 20px;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  background: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
+  background: #f0f4f8;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced the spread of the shadow */
+  text-align: center;
 }
 
 .page {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer, smaller shadow */
+  margin-bottom: 30px;
   padding: 20px;
   font-size: 18px;
-  line-height: 1.6;
-  transition:
-    opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
+  line-height: 1.8;
+  transition: transform 0.3s ease;
+}
+
+.page:hover {
+  transform: scale(1.02);
+}
+
+.page h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.page p {
+  color: #34495e;
 }
 
 .page-image {
-  width: 600px;
-  height: 500px;
-  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .buttons {
   margin-top: 20px;
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 button {
-  margin: 5px;
-  padding: 10px 20px;
+  margin: 10px;
+  padding: 12px 25px;
   border: none;
-  background: #333;
+  background: #2e3a59;
   color: white;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  width: 140px; /* Make the button width consistent */
 }
 
 button:disabled {
   background: #ccc;
   cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #1f2a43;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container,
+  .page {
+    padding: 15px;
+  }
+
+  .page-image {
+    height: 250px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 </style>
